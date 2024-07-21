@@ -1,0 +1,16 @@
+G:\My Drive\Library\C#\CustomControlXaml\bin\Debug\CustomControlXaml.dll
+G:\My Drive\Library\C#\CustomControlXaml\bin\Debug\CustomControlXaml.pdb
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml.csproj.AssemblyReference.cache
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\Alert.g.cs
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml_MarkupCompile.cache
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml_MarkupCompile.lref
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\Alert.baml
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\Themes\Generic.baml
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml.g.resources
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml.Properties.Resources.resources
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml.csproj.GenerateResource.cache
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml.csproj.CoreCompileInputs.cache
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml.dll
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\CustomControlXaml.pdb
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\AppInfor.g.cs
+G:\My Drive\Library\C#\CustomControlXaml\obj\Debug\AppInfor.baml

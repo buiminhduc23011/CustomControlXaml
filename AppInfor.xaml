@@ -1,0 +1,237 @@
+﻿<Window x:Class="CustomControlXaml.AppInfor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomControlXaml"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        MaxHeight="450"
+        MaxWidth="380"
+        Icon="{Binding Logo}"
+        d:DesignHeight="450"
+        d:DesignWidth="380">
+    <Border CornerRadius="10"
+            BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid HorizontalAlignment="Center"
+                      VerticalAlignment="Center">
+                    <Image Source="{Binding Logo}"></Image>
+                </Grid>
+                <Grid Grid.Column="1"
+                      Margin="5,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="{Binding SofName}"
+                                   FontWeight="Bold"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black"></TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="Vesion:"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black"></TextBlock>
+                        <TextBlock Grid.Column="2"
+                                   Text="{Binding Version}"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black"></TextBlock>
+                        <Button Grid.Column="3"
+                                Click="CloseClick"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Background="Transparent"
+                                BorderBrush="Transparent"
+                                ToolTip="Closer">
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="Release date for this Verison:"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black"></TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding ReleaseDate}"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black"></TextBlock>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <TextBlock Margin="5,0,0,0"
+                       Grid.Row="1"
+                       Text="{Binding Copyright}"
+                       VerticalAlignment="Center"
+                       FontSize="15"
+                       Foreground="Black"></TextBlock>
+            <Grid Grid.Row="2"
+                  Margin="5,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0"
+                           Text="Website:"
+                           VerticalAlignment="Center"
+                           FontSize="15"
+                           Foreground="Black"></TextBlock>
+                <TextBlock Grid.Column="1"
+                           VerticalAlignment="Center">
+                            <Hyperlink NavigateUri="{Binding Website}"
+                                       RequestNavigate="Hyperlink_RequestNavigate">
+                                <TextBlock
+                            Text="{Binding Website}"
+                            VerticalAlignment="Center"
+                            FontSize="15"
+                            Foreground="Blue"
+                            TextDecorations="Underline"
+                            FontStyle="Italic">
+                </TextBlock>
+                            </Hyperlink>
+                </TextBlock>
+            </Grid>
+            <TextBlock Margin="5,0,0,0"
+                       Grid.Row="3"
+                       Text="This product is licensed to:"
+                       VerticalAlignment="Bottom"
+                       FontSize="15"
+                       Foreground="Black"></TextBlock>
+            <Grid Grid.Row="4"
+                  Margin="5">
+                <Border BorderBrush="Black"
+                        BorderThickness="1"></Border>
+                <Grid Margin="5,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="Name:"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding SofName}"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="PO:"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding PO}"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="Create Date:"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding Createdate}"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="Upgrade Date:"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding Upgradedate}"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="4"
+                            VerticalAlignment="Bottom">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="Service Hotline:"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding Hotline}"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Foreground="Black">
+                        </TextBlock>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+
+</Window>
