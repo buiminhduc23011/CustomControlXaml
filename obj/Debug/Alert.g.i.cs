@@ -98,4 +98,20 @@ namespace CustomControlXaml {
             this.Custom_AlertICon = ((System.Windows.Controls.Image)(target));
             return;
             case 2:
-            this.lblMsg 
+            this.lblMsg = ((System.Windows.Controls.Label)(target));
+            return;
+            case 3:
+            this.Cancel = ((System.Windows.Controls.Button)(target));
+            
+            #line 23 "..\..\Alert.xaml"
+            this.Cancel.Click += new System.Windows.RoutedEventHandler(this.Cancel_Click);
+            
+            #line default
+            #line hidden
+            return;
+            }
+            this._contentLoaded = true;
+        }
+    }
+}
+
